@@ -80,7 +80,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>300</y>
+      <y>290</y>
       <width>380</width>
       <height>60</height>
      </rect>
@@ -98,7 +98,7 @@
 border: 2px solid #FADADD;
 border-radius: 30;
 color: #FADADD;
-outline: none;</string>
+</string>
     </property>
     <property name="text">
      <string/>
@@ -151,7 +151,7 @@ QPushButton:pressed {
     <property name="font">
      <font>
       <family>Futura</family>
-      <pointsize>14</pointsize>
+      <pointsize>24</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -160,7 +160,7 @@ QPushButton:pressed {
      <string notr="true">background-color: rgb(142, 83, 95);
 border: 2px solid #FADADD;
 border-radius: 30;
-color: rgb(92, 74, 80);</string>
+color: #FADADD;</string>
     </property>
     <property name="text">
      <string/>
@@ -181,7 +181,7 @@ color: rgb(92, 74, 80);</string>
     <property name="font">
      <font>
       <family>Futura</family>
-      <pointsize>14</pointsize>
+      <pointsize>24</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -190,7 +190,8 @@ color: rgb(92, 74, 80);</string>
      <string notr="true">background-color: rgb(142, 83, 95);
 border: 2px solid #FADADD;
 border-radius: 30;
-color: rgb(92, 74, 80);</string>
+color: #FADADD;
+</string>
     </property>
     <property name="text">
      <string/>
@@ -211,7 +212,7 @@ color: rgb(92, 74, 80);</string>
     <property name="font">
      <font>
       <family>Futura</family>
-      <pointsize>14</pointsize>
+      <pointsize>24</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -220,7 +221,8 @@ color: rgb(92, 74, 80);</string>
      <string notr="true">background-color: rgb(142, 83, 95);
 border: 2px solid #FADADD;
 border-radius: 30;
-color: rgb(92, 74, 80);</string>
+color: #FADADD;
+</string>
     </property>
     <property name="text">
      <string/>

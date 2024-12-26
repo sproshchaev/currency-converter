@@ -59,7 +59,7 @@ class Ui_MainWindow(object):
         self.pushButton.setGeometry(QtCore.QRect(50, 650, 380, 60))
         font = QtGui.QFont()
         font.setFamily("Futura")
-        font.setPointSize(18)
+        font.setPointSize(24)
         font.setBold(True)
         font.setWeight(75)
         self.pushButton.setFont(font)
@@ -77,14 +77,14 @@ class Ui_MainWindow(object):
         self.input_amount.setGeometry(QtCore.QRect(50, 380, 380, 60))
         font = QtGui.QFont()
         font.setFamily("Futura")
-        font.setPointSize(14)
+        font.setPointSize(24)
         font.setBold(True)
         font.setWeight(75)
         self.input_amount.setFont(font)
         self.input_amount.setStyleSheet("background-color: rgb(142, 83, 95);\n"
 "border: 2px solid #FADADD;\n"
 "border-radius: 30;\n"
-"color: rgb(92, 74, 80);")
+"color: #FADADD;")
         self.input_amount.setText("")
         self.input_amount.setAlignment(QtCore.Qt.AlignCenter)
         self.input_amount.setObjectName("input_amount")
@@ -92,14 +92,14 @@ class Ui_MainWindow(object):
         self.output_currency.setGeometry(QtCore.QRect(50, 470, 380, 60))
         font = QtGui.QFont()
         font.setFamily("Futura")
-        font.setPointSize(14)
+        font.setPointSize(24)
         font.setBold(True)
         font.setWeight(75)
         self.output_currency.setFont(font)
         self.output_currency.setStyleSheet("background-color: rgb(142, 83, 95);\n"
 "border: 2px solid #FADADD;\n"
 "border-radius: 30;\n"
-"color: rgb(92, 74, 80);")
+"color: #FADADD;")
         self.output_currency.setText("")
         self.output_currency.setAlignment(QtCore.Qt.AlignCenter)
         self.output_currency.setObjectName("output_currency")
@@ -107,14 +107,14 @@ class Ui_MainWindow(object):
         self.output_amount.setGeometry(QtCore.QRect(50, 560, 380, 60))
         font = QtGui.QFont()
         font.setFamily("Futura")
-        font.setPointSize(14)
+        font.setPointSize(24)
         font.setBold(True)
         font.setWeight(75)
         self.output_amount.setFont(font)
         self.output_amount.setStyleSheet("background-color: rgb(142, 83, 95);\n"
 "border: 2px solid #FADADD;\n"
 "border-radius: 30;\n"
-"color: rgb(92, 74, 80);")
+"color: #FADADD;")
         self.output_amount.setText("")
         self.output_amount.setAlignment(QtCore.Qt.AlignCenter)
         self.output_amount.setObjectName("output_amount")
@@ -138,3 +138,23 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
+
+
+class Converter:
+    def convert(self, amount, from_currency, to_currency):
+        # Пример реализации конверсии валют
+        rates = {
+            "USD": 1.0,
+            "EUR": 0.85,
+            "RUB": 100.0
+        }
+
+        if from_currency not in rates or to_currency not in rates:
+            raise ValueError("Указана некорректная валюта")
+
+        # Конвертация валюты
+        return amount * rates[to_currency] / rates[from_currency]
+
+
+# Экземпляр класса Converter
+c = Converter()
