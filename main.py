@@ -10,6 +10,9 @@ class CurrencyConv(QtWidgets.QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
+
+
+
 app = QtWidgets.QApplication([])
 application = CurrencyConv()
 application.show()
