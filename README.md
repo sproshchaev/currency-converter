@@ -12,3 +12,7 @@ pip install PyQt5==5.15.5
 Или из папки .venv/bin/
 .venv/bin/pip3.9 install PyQt5==5.15.5
 ```
+
+ПРЕЗЕНТАЦИЯ 
+
+https://clck.ru/3FUHvv
