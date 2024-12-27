@@ -24,7 +24,7 @@ class CurrencyConv(QtWidgets.QMainWindow):
         self.ui.pushButton.clicked.connect(self.converter)
 
     def converter(self):
-        # Ваши фиксированные курсы валют
+        # Фиксированные курсы валют
         exchange_rates = {
             'EUR': {'RUB': 103.3, 'USD': 1.04},
             'RUB': {'EUR': 0.009681, 'USD': 0.010078},
